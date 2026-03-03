@@ -17,7 +17,7 @@ services:
   app:
     build: .
     ports:
-      - "8002:80"
+      - "8004:80"
     volumes:
       - .:/var/www/html
     depends_on:
@@ -32,7 +32,7 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-      - "8003:80"
+      - "8005:80"
     volumes:
       - .:/var/www/html
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
