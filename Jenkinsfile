@@ -11,7 +11,7 @@ pipeline {
             steps {
                 git branch: 'main', 
                     credentialsId: 'github-raj123raj',  // Your GitHub token
-                    url: 'https://github.com/raj123raj/laravel-docker.git'
+                    url: 'https://github.com/raj123raj/laravel-docker'
             }
         }
         
