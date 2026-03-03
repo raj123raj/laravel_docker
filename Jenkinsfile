@@ -9,9 +9,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', 
-                    credentialsId: 'github-raj123raj',  // Your GitHub token
-                    url: 'https://github.com/raj123raj/laravel-docker.git'
+                git branch: 'main',                     
+                url: 'https://github.com/raj123raj/laravel-docker.git'
             }
         }
         
